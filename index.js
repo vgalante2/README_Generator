@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const generateMarkdown = require('./utils/generateMarkdown')
+const generateMarkdown = require('./Develop/utils/generateMarkdown')
 const fs = require('fs')
 const inquirer = require('inquirer')
 
@@ -14,16 +14,32 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Please enter your project license: ',
-    choices: ['No License','MIT','PostgreSQL', {
-        name: 'Mozilla Public License 2.0',
-        value: 'MPL-2.0' 
-    },
-    {
-        name: 'Eclipse Public License 1.0',
-        value: 'EPL-1.0' 
-    } ],
+    choices: [
+      { name: 'MIT', value: 'MIT' },
+      { name: 'PostgreSQL', value: 'PostgreSQL' },
+      { name: 'Academic Free License 3.0', value: 'AFL-3.0' },
+      { name: 'Eclipse Public License 2.0', value: 'EPL-2.0' },
+      { name: 'No License', value: '' } 
+  ]
  
-}
+},
+{
+  name: 'description',
+  type: 'input',
+  message: 'Please enter a description: '
+},
+{
+  name: 'imageURL',
+  type: 'input',
+  message: 'Please enter the URL to an image for your project (leave blank if none): '
+},
+{
+  name: 'liveDemo',
+  type: 'input',
+  message: 'Please enter the URL to a live demo of your project (leave blank if none): '
+},
+
+
 
 ];
 
