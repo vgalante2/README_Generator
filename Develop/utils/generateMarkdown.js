@@ -8,7 +8,16 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  const licenseLinks = {
+    'MIT': 'https://opensource.org/licenses/MIT',
+    'PostgreSQL': 'https://www.postgresql.org/about/licence/',
+    'AFL-3.0': 'https://opensource.org/licenses/AFL-3.0',
+    'EPL-2.0': 'https://opensource.org/licenses/EPL-2.0',
+    '': '' // No license
+  };
 
+  return licenseLinks[license] || '';
+  
 }
 
 // TODO: Create a function that returns the license section of README
@@ -31,14 +40,19 @@ function generateMarkdown(data) {
 
    ${data.description}
 
+
+   ${data.imageURL ? `
    <h1>#Visuals</h1>
 
-   <img src="${data.imageURL}" >
+   <img src="${data.imageURL}" >` : ''}
 
+
+   ${data.liveDemo ? `
    <h1>#Deployment</h1>
 
-   Live Demo: ([DEMO >](${data.liveDemo}))
+   Live Demo: ([DEMO >](${data.liveDemo}))` : ''}
 
+   
    <h1>#License</h1>
 
    ${renderLicenseBadge(data.license)}
