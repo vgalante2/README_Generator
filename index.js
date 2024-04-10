@@ -38,6 +38,21 @@ const questions = [
   type: 'input',
   message: 'Please enter the URL to a live demo of your project (leave blank if none): '
 },
+{
+  name: 'usage',
+  type: 'input',
+  message: 'Please enter how someone can use your app: '
+},
+{
+  name: 'github',
+  type: 'input',
+  message: 'Please enter your github username: '
+},
+{
+  name: 'email',
+  type: 'input',
+  message: 'Please enter your email: '
+}
 
 
 

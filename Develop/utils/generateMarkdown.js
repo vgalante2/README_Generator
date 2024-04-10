@@ -52,7 +52,17 @@ function generateMarkdown(data) {
 
    Live Demo: ([DEMO >](${data.liveDemo}))` : ''}
 
+   <h1>#Usage</h1>
+
+   ${data.usage}
+
+   <h1>#Contact</h1>
+
+   Github: ${data.github}
    
+   Email: ${data.email}
+
+
    <h1>#License</h1>
 
    ${renderLicenseBadge(data.license)}
