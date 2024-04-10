@@ -62,6 +62,12 @@ function generateMarkdown(data) {
    
    Email: ${data.email}
 
+  <h1>#Credits</h1>
+
+  ${data.credits}
+  
+  ${renderLicenseLink(data.license)}
+
 
    <h1>#License</h1>
 

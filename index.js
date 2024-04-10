@@ -52,6 +52,11 @@ const questions = [
   name: 'email',
   type: 'input',
   message: 'Please enter your email: '
+},
+{
+  name: 'credits',
+  type: 'input',
+  message: 'Please enter all credits: (License will automatically show up) '
 }
 
 

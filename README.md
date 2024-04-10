@@ -1,8 +1,8 @@
-# kmrvtr
+# rontbnrb
 
   <h1>#Description</h1>
 
-   torentorb
+   troknonbt
 
 
    
@@ -12,18 +12,24 @@
 
    <h1>#Usage</h1>
 
-   etrjnvjenrbknweltbkenrltb
+   trmbrnmlb
 
    <h1>#Contact</h1>
 
-   Github: vgalante2
+   Github: gjntjbnjtr
    
-   Email: vgalante0@gmail.com
+   Email: ktmrkbnktnrkbt
+
+  <h1>#Credits</h1>
+
+  tkmrlnbtknlrknbltknr
+  
+  https://opensource.org/licenses/MIT
 
 
    <h1>#License</h1>
 
-   ![Github License](https://img.shields.io/badge/license-PostgreSQL-blue.svg)
+   ![Github License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-  Licensed under the PostgreSQL license.
+  Licensed under the MIT license.
   
